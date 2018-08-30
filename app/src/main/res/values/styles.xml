@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.AppLauncher" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@mipmap/laucher_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MenuButtonsStyle">
+        <item name="fab_colorNormal">#ffffffff</item>
+        <item name="fab_colorPressed">#ffefefef</item>
+        <item name="fab_colorRipple">#ffd99200</item>
+        <item name="fab_shadowColor">#ff444444</item>
+        <item name="fab_size">mini</item>
+        <item name="fab_showAnimation">@anim/jump_from_down</item>
+        <item name="fab_hideAnimation">@anim/jump_to_down</item>
+    </style>
+    <style name="MenuLabelsStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:background="@drawable/rounded_corners_bg">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="60dp"
+            android:id="@+id/progress"
+            android:src="@drawable/layer_recording_animation" />
+
+        <TextView
+            android:id="@+id/playIng"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_width="114dp"
+            android:visibility="gone"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:text="正在播放" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:id="@+id/text1"
+            android:layout_width="114dp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="00:00" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:background="@drawable/selector_recodering_btn"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:id="@+id/button1"
+        android:gravity="center"
+        android:text="开始录制"
+        android:padding="12dp" />
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:id="@+id/okAndCancel"
+        android:visibility="gone"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_height="45dp"
+            android:layout_width="60dp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_corners_left"
+            android:text="取消" />
+
+        <TextView
+            android:layout_height="45dp"
+            android:layout_width="1dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_height="45dp"
+            android:layout_width="60dp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:background="@drawable/rounded_corners_right"
+            android:textSize="16sp"
+            android:text="完成" />
+    </LinearLayout>
+</LinearLayout>

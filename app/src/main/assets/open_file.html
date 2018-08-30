@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>Open System Media Picture:<br>
+<br><input type="file" accept="image/png,image/gif" >
+<br><input type="file" multiple>
+<br><input type="file" accept="audio/mpeg" capture="camcorder" >
+<button type="button" id="button1" onclick="clickPrompt()">录音</button>
+<br>
+<script>
+function clickPrompt(){
+    // 调用prompt（）
+    var result=prompt("js://showRecord");
+    if(result != null){
+    }
+    //alert("demo " + result);
+}
+</script>
+
+</body>
+</html>
